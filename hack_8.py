@@ -8,7 +8,11 @@ text: ["a","b"] output => ["2","1"]
 """
 
 
-def fn_hack_8():
-    result = ["a","b","c","d","e"]
-    #...
-    return result
+def fn_hack_8(result):
+    solution = []
+    if(len(result)%2!=0):
+        for i in range(len(result)-1,-1,-1):
+            solution.append("{}-{}".format(result[i],i+1))
+    else:
+        solution = [ str(i+1) for i in range(len(result)-1,-1,-1)]
+    return solution

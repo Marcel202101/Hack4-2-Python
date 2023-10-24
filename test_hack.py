@@ -66,7 +66,6 @@ def test_hack_3(input, expected):
 def test_hack_4(input, expected):
     assert input == expected
 
-
 # hack-5
 @pytest.mark.parametrize(
     "input,expected",
@@ -79,7 +78,6 @@ def test_hack_4(input, expected):
 )
 def test_hack_5(input, expected):
     assert input == expected
-
 
 # hack-6
 @pytest.mark.parametrize(

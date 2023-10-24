@@ -15,7 +15,15 @@ text: "qux" output => "QvX"
 """
 
 
-def fn_hack_3():
-    result = "fooziman"
-    #...
+def fn_hack_3(result):
+    result = result.replace("o","0")
+    result = result.replace("i", "¡")
+    result = result.replace("a", "@")
+    result = result.replace("q", "Q")
+    result = result.replace("u", "v")
+    result = result.replace("x", "X")
+    result = result.replace("n", "N")
+    result = result[0].upper() + result[1:]
     return result
+
+print(fn_hack_3('barziman'))
